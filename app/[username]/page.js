@@ -5,24 +5,24 @@ import connectDB from '@/app/db/connectDB';
 import User from '@/app/models/User';
 
 const Username = async ({ params }) => {
-  const { username } = await params;
+  const decodedUsername = decodeURIComponent(params.username);
 
   await connectDB();
-  let u = await User.findOne({ username: username });
+  let u = await User.findOne({ username: decodedUsername });
   if (!u) {
     notFound();
   }
   return (
     <>
-      <PaymentPage username={username} />
+      <PaymentPage username={decodedUsername} />
     </>
   );
 };
 
 export default Username;
 export async function generateMetadata({ params }) {
-  const { username } = await params;
+  const decodedUsername = decodeURIComponent(params.username);
   return {
-    title: `${username} - MatchaCado`,
+    title: `${decodedUsername} - MatchaCado`,
   };
 }
