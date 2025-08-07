@@ -148,7 +148,7 @@ const PaymentPage = ({ username }) => {
         <div className="info flex justify-center items-center gap-2 mt-14 flex-col">
           <div className="text-2xl font-bold">@{username}</div>
           <div className="text-sm text-slate-400">
-            Let's help {username} to achieve their goals
+            Let&apos;s help {username} to achieve their goals
           </div>
           <div className="text-slate-400">
             {payments.length} members || ₹
@@ -179,7 +179,7 @@ const PaymentPage = ({ username }) => {
                       <span className="text-[#3B4013] font-bold">
                         ₹{p.amount}
                       </span>{' '}
-                      with a message "{p.message}"
+                      with a message &quot;{p.message}&quot;
                     </li>
                   );
                 })}

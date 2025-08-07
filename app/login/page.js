@@ -2,6 +2,7 @@
 import React from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { redirect } from 'next/navigation';
+import Link from 'next/link';
 
 const Login = () => {
   const { data: session } = useSession();
@@ -66,13 +67,13 @@ const Login = () => {
                   <div className="mt-14 space-y-4 py-3 text-gray-600 dark:text-gray-400 text-center">
                     <p className="text-xs">
                       By proceeding, you agree to our{' '}
-                      <a href="/privacy-policy/" className="underline">
+                      <Link href="/privacy-policy/" className="underline">
                         Terms of Use
-                      </a>{' '}
+                      </Link>{' '}
                       and confirm you have read our{' '}
-                      <a href="/privacy-policy/" className="underline">
+                      <Link href="/privacy-policy/" className="underline">
                         Privacy and Cookie Statement
-                      </a>
+                      </Link>
                       .
                     </p>
                   </div>

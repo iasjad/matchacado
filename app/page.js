@@ -62,7 +62,7 @@ export default function Home() {
               src="/coin.gif"
               alt=""
             />
-            <p className="font-bold text-center">Let other's help you</p>
+            <p className="font-bold text-center">Let other&apos;s help you</p>
             <p className="text-center">
               Your fans are more then happy to fund you.
             </p>
@@ -86,11 +86,11 @@ export default function Home() {
         <h2 className="text-2xl font-bold text-center mb-14">
           Learn More About Us!
         </h2>
-        <p className='p-5 text-center'>
+        <p className="p-5 text-center">
           Our gole is to setup a platform where creators can list them salf and
           fans can support them.
         </p>
-        <p className='p-5 text-center'>
+        <p className="p-5 text-center">
           This is why the name is MatchaCad, it is mixture of Matcha and
           Avacado, in this ecomemy matcha and avocado considered as luxury now
           You will be able to afford this luxury
